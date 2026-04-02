@@ -181,6 +181,24 @@ body {
   cursor: none;
 }
 
+/* Override browser autofill background on all inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #080808 inset !important;
+  box-shadow: 0 0 0 1000px #080808 inset !important;
+  -webkit-text-fill-color: var(--cream) !important;
+  caret-color: var(--cream);
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 /* Input styles */
 .input-luxury {
   background: transparent;

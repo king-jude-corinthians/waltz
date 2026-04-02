@@ -98,7 +98,7 @@ export default function NewsletterSection() {
                   placeholder="Your email address"
                   required
                   className="input-luxury flex-1"
-                  style={{ textAlign: "center" }}
+                  style={{ textAlign: "center", backgroundColor: "#080808" }}
                 />
                 <button type="submit" className="btn-gold shrink-0" style={{ padding: "14px 28px" }}>
                   <span>Subscribe</span>
