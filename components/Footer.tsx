@@ -23,7 +23,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer
-      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)", marginTop: "80px" }}
+      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)" }}
     >
       <div className="container-luxury py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">

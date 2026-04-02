@@ -38,7 +38,7 @@ export default function NewsletterSection() {
         }}
       />
 
-      <div className="container-luxury py-24 pb-32 relative z-10">
+      <div className="container-luxury py-24 relative z-10">
         <div className="max-w-2xl mx-auto text-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
