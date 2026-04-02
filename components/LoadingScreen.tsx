@@ -60,7 +60,7 @@ export default function LoadingScreen() {
                 className="text-[10px] tracking-[0.6em] uppercase mb-6"
                 style={{ color: "rgba(201, 168, 76, 0.6)", fontFamily: "var(--font-dm-sans)" }}
               >
-                Lagos · Nigeria
+                Abuja · Nigeria
               </p>
             </motion.div>
 
