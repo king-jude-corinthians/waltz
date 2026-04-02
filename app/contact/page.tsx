@@ -8,29 +8,29 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "14B Kofo Abayomi Street, Victoria Island, Lagos",
+    value: "Gwarimpa UltraModern Market, Abuja FCT",
     sub: "By appointment only",
   },
   {
     icon: Phone,
     label: "Call Us",
-    value: "+234 (0) 800 000 0000",
+    value: "+234 902 469 2783",
     sub: "Mon – Sat, 9am – 7pm",
-    href: "tel:+2348000000000",
+    href: "tel:+2349024692783",
   },
   {
     icon: Mail,
     label: "Email Us",
-    value: "hello@waltzsignature.com",
+    value: "waltzsignature@gmail.com",
     sub: "We respond within 24 hours",
-    href: "mailto:hello@waltzsignature.com",
+    href: "mailto:waltzsignature@gmail.com",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+234 (0) 800 000 0000",
+    value: "+234 902 469 2783",
     sub: "Quick consultations & inquiries",
-    href: "https://wa.me/2348000000000",
+    href: "https://wa.me/2349024692783",
   },
 ];
 
@@ -241,7 +241,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formState.phone}
                       onChange={handleChange}
-                      placeholder="+234 (0) 800 000 0000"
+                      placeholder="+234 902 469 2783"
                       required
                       className="input-luxury"
                     />
@@ -481,7 +481,7 @@ export default function ContactPage() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/2348000000000"
+              href="https://wa.me/2349024692783"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-4 mt-8 p-6 group transition-all duration-300"

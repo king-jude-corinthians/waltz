@@ -23,7 +23,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer
-      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)" }}
+      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)", paddingTop: "60px" }}
     >
       <div className="container-luxury py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
@@ -77,7 +77,7 @@ export default function Footer() {
                 <Instagram size={14} />
               </a>
               <a
-                href="https://wa.me/2348000000000"
+                href="https://wa.me/2349024692783"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 border border-[rgba(201,168,76,0.2)] flex items-center justify-center text-[#7A7A7A] hover:border-gold hover:text-gold transition-all duration-300 text-[11px] tracking-widest font-light"
@@ -141,27 +141,27 @@ export default function Footer() {
               <li className="flex gap-3 items-start">
                 <MapPin size={14} className="text-gold mt-1 shrink-0" />
                 <span style={{ color: "#7A7A7A", fontSize: "13px", lineHeight: "1.6" }}>
-                  14B Kofo Abayomi Street,<br />Victoria Island, Lagos
+                  Gwarimpa UltraModern Market,<br />Abuja FCT
                 </span>
               </li>
               <li className="flex gap-3 items-center">
                 <Phone size={14} className="text-gold shrink-0" />
                 <a
-                  href="tel:+2348000000000"
+                  href="tel:+2349024692783"
                   style={{ color: "#7A7A7A", fontSize: "13px" }}
                   className="hover:text-cream transition-colors"
                 >
-                  +234 (0) 800 000 0000
+                  +234 902 469 2783
                 </a>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail size={14} className="text-gold shrink-0" />
                 <a
-                  href="mailto:hello@waltzsignature.com"
+                  href="mailto:waltzsignature@gmail.com"
                   style={{ color: "#7A7A7A", fontSize: "13px" }}
                   className="hover:text-cream transition-colors"
                 >
-                  hello@waltzsignature.com
+                  waltzsignature@gmail.com
                 </a>
               </li>
             </ul>
@@ -175,7 +175,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Waltz Signature. All rights reserved.
           </p>
           <p style={{ color: "#4A4A4A", fontSize: "11px", letterSpacing: "0.1em" }}>
-            Crafted in Lagos, Nigeria
+            Crafted in Abuja, Nigeria
           </p>
         </div>
       </div>

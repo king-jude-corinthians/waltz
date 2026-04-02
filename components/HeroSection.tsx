@@ -103,7 +103,7 @@ export default function HeroSection() {
             marginBottom: "40px",
           }}
         >
-          Lagos, Nigeria · Est. 2018
+          Abuja, Nigeria · Est. 2018
         </motion.p>
 
         {/* WALTZ */}

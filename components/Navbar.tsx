@@ -170,7 +170,7 @@ export default function Navbar() {
               <div className="mt-auto">
                 <div className="gold-divider mb-8" />
                 <p style={{ color: "#7A7A7A", fontSize: "12px", letterSpacing: "0.3em" }}>
-                  Lagos, Nigeria · +234 (0) 800 000 0000
+                  Abuja, Nigeria · +234 902 469 2783
                 </p>
               </div>
             </div>
