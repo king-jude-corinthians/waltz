@@ -28,8 +28,6 @@ export default function NewsletterSection() {
         position: "relative",
         zIndex: 1,
         overflow: "hidden",
-        marginTop: "100px",
-        marginBottom: "100px",
       }}
     >
       {/* Gold gradient bg */}
@@ -40,7 +38,7 @@ export default function NewsletterSection() {
         }}
       />
 
-      <div className="container-luxury py-24 relative z-10">
+      <div className="container-luxury relative z-10" style={{ paddingTop: "120px", paddingBottom: "120px" }}>
         <div className="max-w-2xl mx-auto text-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
