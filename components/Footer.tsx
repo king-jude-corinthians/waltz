@@ -23,9 +23,9 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer
-      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)", paddingTop: "60px" }}
+      style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.12)" }}
     >
-      <div className="container-luxury py-20">
+      <div className="container-luxury" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Brand Column */}
           <div className="md:col-span-1">
@@ -175,7 +175,17 @@ export default function Footer() {
             © {new Date().getFullYear()} Waltz Signature. All rights reserved.
           </p>
           <p style={{ color: "#4A4A4A", fontSize: "11px", letterSpacing: "0.1em" }}>
-            Crafted in Abuja, Nigeria
+            Crafted by{" "}
+            <a
+              href="https://your-portfolio-link-here.com"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#C9A84C", transition: "opacity 0.3s" }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = "0.7")}
+              onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+            >
+              KINGJUDE
+            </a>
           </p>
         </div>
       </div>
