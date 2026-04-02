@@ -503,6 +503,7 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </div>
+      <div style={{ paddingBottom: "100px" }} />
     </div>
   );
 }

@@ -387,7 +387,7 @@ export default function CollectionsPage() {
           </AnimatePresence>
 
           {/* CTA */}
-          <div className="text-center mt-20 pt-16" style={{ borderTop: "1px solid rgba(201,168,76,0.08)" }}>
+          <div className="text-center mt-20 pt-16 pb-24" style={{ borderTop: "1px solid rgba(201,168,76,0.08)" }}>
             <p
               style={{
                 fontFamily: "var(--font-cormorant)",
