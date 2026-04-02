@@ -28,6 +28,8 @@ export default function NewsletterSection() {
         position: "relative",
         zIndex: 1,
         overflow: "hidden",
+        marginTop: "100px",
+        marginBottom: "100px",
       }}
     >
       {/* Gold gradient bg */}
