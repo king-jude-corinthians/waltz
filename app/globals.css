@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8D18A;
+  --gold-dark: #9A7530;
+  --black: #080808;
+  --dark: #0D0D0D;
+  --dark-2: #161616;
+  --dark-3: #1F1F1F;
+  --cream: #F5EDD6;
+  --ivory: #FAF7F2;
+  --muted: #7A7A7A;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--cream);
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-light);
+}
+
+/* Text selection */
+::selection {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* Gold shimmer text effect */
+.text-shimmer {
+  background: linear-gradient(
+    120deg,
+    var(--gold-dark) 0%,
+    var(--gold) 25%,
+    var(--gold-light) 50%,
+    var(--gold) 75%,
+    var(--gold-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Luxury divider */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Section padding */
+.section-pad {
+  padding: 100px 0;
+}
+
+/* Container */
+.container-luxury {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+@media (max-width: 768px) {
+  .container-luxury {
+    padding: 0 24px;
+  }
+  .section-pad {
+    padding: 70px 0;
+  }
+}
+
+/* Grain texture overlay */
+.grain-overlay::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* Product card hover */
+.product-card {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+/* Button styles */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  cursor: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gold:hover::before {
+  transform: translateX(0);
+}
+.btn-gold:hover {
+  color: var(--dark);
+}
+.btn-gold span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  color: rgba(245, 237, 214, 0.6);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  cursor: none;
+}
+.btn-ghost:hover {
+  color: var(--cream);
+}
+
+/* Magnetic cursor target */
+[data-cursor="magnetic"] {
+  cursor: none;
+}
+
+/* Input styles */
+.input-luxury {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+  color: var(--cream);
+  padding: 12px 0;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  cursor: none;
+}
+.input-luxury::placeholder {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.input-luxury:focus {
+  border-bottom-color: var(--gold);
+}
+
+/* Aspect ratio helpers */
+.aspect-portrait {
+  aspect-ratio: 3/4;
+}
+.aspect-square-custom {
+  aspect-ratio: 1/1;
+}

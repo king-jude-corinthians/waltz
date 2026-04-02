@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node \"node_modules/next/dist/bin/next\" build)",
+      "Bash(npm run:*)",
+      "Bash(cmd /c \"cd /d \"\"c:\\\\Users\\\\mirac\\\\Downloads\\\\waltz signature\"\" && npm install 2>&1\")",
+      "Bash(cmd /c \"dir /s /b \"\"c:\\\\Users\\\\mirac\\\\Downloads\\\\waltz signature\\\\node_modules\\\\.bin\"\"\")",
+      "Bash(cmd /c \"dir /b \"\"c:\\\\Users\\\\mirac\\\\Downloads\\\\waltz signature\\\\node_modules\"\"\")",
+      "Bash(cmd /c \"dir \"\"c:\\\\Users\\\\mirac\\\\Downloads\\\\waltz signature\\\\node_modules\"\" > C:\\\\Temp\\\\dirlisting.txt 2>&1\")",
+      "Read(//c/Temp/**)",
+      "Bash(powershell -Command \"Get-ChildItem ''c:\\\\Users\\\\mirac\\\\Downloads\\\\waltz signature\\\\node_modules'' -Name | Measure-Object\")"
+    ]
+  }
+}
