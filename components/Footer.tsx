@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
   Collections: [
@@ -74,7 +73,7 @@ export default function Footer() {
                 rel="noreferrer"
                 className="w-10 h-10 border border-[rgba(201,168,76,0.2)] flex items-center justify-center text-[#7A7A7A] hover:border-gold hover:text-gold transition-all duration-300"
               >
-                <Instagram size={14} />
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
               </a>
               <a
                 href="https://wa.me/2349024692783"
@@ -180,9 +179,13 @@ export default function Footer() {
               href="https://your-portfolio-link-here.com"
               target="_blank"
               rel="noreferrer"
-              style={{ color: "#C9A84C", transition: "opacity 0.3s" }}
-              onMouseEnter={e => (e.currentTarget.style.opacity = "0.7")}
-              onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+              style={{
+                color: "#C9A84C",
+                transition: "text-shadow 0.3s ease",
+                textShadow: "0 0 8px rgba(201,168,76,0.6), 0 0 16px rgba(201,168,76,0.3)",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.textShadow = "0 0 12px rgba(201,168,76,1), 0 0 24px rgba(201,168,76,0.8), 0 0 48px rgba(201,168,76,0.5)")}
+              onMouseLeave={e => (e.currentTarget.style.textShadow = "0 0 8px rgba(201,168,76,0.6), 0 0 16px rgba(201,168,76,0.3)")}
             >
               KINGJUDE
             </a>
