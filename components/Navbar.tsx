@@ -143,8 +143,8 @@ export default function Navbar() {
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="container-luxury flex flex-col h-full py-24">
-              <nav className="flex flex-col gap-8 mt-8">
+            <div className="container-luxury flex flex-col h-full" style={{ paddingTop: "100px", paddingBottom: "40px" }}>
+              <nav className="flex flex-col gap-8">
                 {navLinks.map((link, i) => (
                   <motion.div
                     key={link.href}
